@@ -15,7 +15,7 @@
         </div>
     </nav>
     <div class="container" id="form-container">
-        <form>
+        <form action="{{url_for('create')}}" method="POST">
             <label for="task">WRITE TASK</label>
             <input type="text" name="task" placeholder="Enter your task">
             <label for="description">DESCRIPTION</label>
@@ -39,11 +39,13 @@
                 </div>
             </li>
             {% else %}
-            <li><p>No tasks to display</p></li>
+            <li>
+                <p>No tasks to display</p>
+            </li>
             {% endfor %}
         </ul>
     </div>
-    
+
 </body>
 
 </html>

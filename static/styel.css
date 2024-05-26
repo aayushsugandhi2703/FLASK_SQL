@@ -47,7 +47,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin-top: 15%;
-    margin-bottom: 20%;
+  
     
 }
 label {
@@ -92,6 +92,7 @@ button:hover {
 /* Style for the task container */
 #task-container {
     margin-top: 20px;
+    margin-bottom: 17%;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;

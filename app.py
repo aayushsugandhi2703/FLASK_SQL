@@ -18,8 +18,8 @@ def index():
     # Retrieve all tasks from the database
     cursor.execute('SELECT * FROM tasks')
     tasks = cursor.fetchall()
-    cursor.close()
     return render_template('index.html', tasks=tasks)
+    cursor.close()
 
 if __name__ == '__main__':
     app.run(debug=True)

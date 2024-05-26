@@ -28,14 +28,22 @@
         </form>
     </div>
     <div class="container" id="task-container">
-        <ul>
+        <ul class="task-list">
             {% for task in tasks %}
-            <li>{{task}}</li>
+            <li>
+                <div class="task">
+                    <div class="task-id">Task__{{ task[0] }}</div>
+                    <div class="task-title">{{ task[1] }}</div>
+                    <div class="task-description">{{ task[2] }}</div>
+                    <div class="task-status">Status: {{ "Completed" if task[3] else "Pending" }}</div>
+                </div>
+            </li>
             {% else %}
-            <p>No tasks to display</p>
+            <li><p>No tasks to display</p></li>
             {% endfor %}
         </ul>
     </div>
+    
 </body>
 
 </html>

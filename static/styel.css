@@ -47,9 +47,10 @@ body {
     width: 100%;
     max-width: 400px;
     margin-top: 15%;
-  
-    
+
+
 }
+
 label {
     margin-bottom: 5px;
     font-weight: bold;
@@ -87,30 +88,61 @@ button:hover {
     background-color: #5b08c9;
 }
 
-/* style.css */
+
 
 /* Style for the task container */
+
 #task-container {
     margin-top: 20px;
     margin-bottom: 17%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+}
+#task-container ul li{
+    list-style: none;
 }
 
-/* Style for the task list */
-#task-container ul {
-    list-style-type: none;
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between tasks */
+    list-style: none;
     padding: 0;
 }
 
-/* Style for individual tasks */
-#task-container ul li {
-    margin-bottom: 5px;
+.task {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Style for the "No tasks to display" message */
-#task-container p {
+.task-id {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d81d16;
+}
+
+.task-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    color: #a200ff;
+}
+
+.task-description {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #a200ff;
+}
+
+.task-status {
+    font-weight: bold;
+    margin-top: 24px;
+    color: #09ff00;
+    font-weight: bold;
+}
+
+.no-tasks {
     font-style: italic;
-    color: #888;
+    color: #a200ff;
 }

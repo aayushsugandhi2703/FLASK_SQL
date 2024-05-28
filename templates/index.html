@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styel.css">
-    <title>Document</title>
+    <title>Task Manager</title>
 </head>
 
 <body>
@@ -16,14 +16,10 @@
     </nav>
     <div class="container" id="form-container">
         <form action="{{ url_for('create') }}" method="POST">
-            <label for="task">WRITE TASK</label>
+            <label for="task">Write Task</label>
             <input type="text" name="task" placeholder="Enter your task" required>
-            <label for="description">DESCRIPTION</label>
+            <label for="description">Description</label>
             <input type="text" name="description" placeholder="Enter your description" required>
-            <div>
-                <input type="checkbox" name="completed">
-                <label for="completed">DONE</label>
-            </div>
             <button type="submit">Create</button>
         </form>
     </div>
@@ -35,11 +31,8 @@
                     <form method="POST" action="{{ url_for('update', id=task[0]) }}">
                         <div class="task-id">Task ID: {{ task[0] }}</div>
                         <div class="task-title"><input type="text" name="task" value="{{ task[1] }}" required></div>
-                        <div class="task-description"><input type="text" name="description" value="{{ task[2] }}" required></div>
-                        <div class="task-status">Status: {{ "Completed" if task[3] else "Pending" }}
-                            <input type="checkbox" name="done" {% if task[3] %}checked{% endif %}>
-                            <label for="done">Done</label>
-                        </div>
+                        <div class="task-description"><input type="text" name="description" value="{{ task[2] }}"
+                                required></div>
                         <button type="submit">Update</button>
                     </form>
                     <form method="POST" action="{{ url_for('delete', id=task[0]) }}">

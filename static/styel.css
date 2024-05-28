@@ -1,0 +1,206 @@
+/* style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom left, #7700ff, #c300ff, #e100ff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #c300ff;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Form Container Styles */
+#form-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #a200ff;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    background-color: #7700ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5b08c9;
+}
+
+/* Style for the task container */
+
+#task-container {
+    margin-top: 20px;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the task list */
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between tasks */
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for individual tasks */
+
+
+.task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for task ID */
+.task-id {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d81d16;
+    margin-bottom: 10px;
+}
+
+/* Style for task title */
+.task-title input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #a200ff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.task-title input:focus {
+    border-color: #a200ff;
+}
+
+/* Style for task description */
+.task-description input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.task-description input:focus {
+    border-color: #a200ff;
+}
+
+/* Style for task status */
+.task-status {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.task-status input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.task-status label {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.status-text {
+    color: #09ff00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style for buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: #7700ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #5b08c9;
+}
+
+/* Style for the "No tasks to display" message */
+.no-tasks {
+    font-style: italic;
+    color: #a200ff;
+}

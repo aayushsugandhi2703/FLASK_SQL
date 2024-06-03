@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify, f
 import mysql.connector
 
 app = Flask(__name__)
-app.secret_key = '\xbd\xa4\xe9_4[!\xe5oW\xc9\xfc\xdfM+\xaf\x9b\x88my\xd6\xfe\xd9T'  # Replace with your own secret key
+app.secret_key = '\xbd\xa4\xe9_4[!\xe5oW\xc9\xfc\xdfM+\xaf\x9b\x88my\xd6\xfe\xd9T'  #  your  secret key
 
 # Database connection
 db = mysql.connector.connect(

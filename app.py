@@ -35,7 +35,7 @@ def create():
         except Exception as e:
             db.rollback()
             flash(f'Error adding task: {str(e)}')
-        
+
         return redirect(url_for('index'))
 
 @app.route('/update/<int:id>', methods=['POST'])
